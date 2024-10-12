@@ -1,10 +1,11 @@
 local util = require('__core__/lualib/util')
+local my_util = require('__vector-constant-combinator__/prototypes/util')
 
 local remnants = util.table.deepcopy(data.raw['corpse']['constant-combinator-remnants'])
 remnants.name = 'vector-constant-combinator-remnants'
 
-remnants.icon =                             '__ConstantVectorCombinator__/graphics/icons/vector-constant-combinator.png'
-remnants.animation[1].filename =               '__ConstantVectorCombinator__/graphics/entity/combinator/remnants/constant/vector-constant-combinator-remnants.png'
-remnants.animation[1].hr_version.filename =    '__ConstantVectorCombinator__/graphics/entity/combinator/remnants/constant/hr-vector-constant-combinator-remnants.png'
+remnants.icon =                             my_util.rebase_path(remnants.icon)
+remnants.animation[1].filename =            my_util.rebase_path(remnants.animation[1].filename)
+remnants.animation[1].hr_version.filename = my_util.rebase_path(remnants.animation[1].hr_version.filename)
 
 data:extend{remnants}
