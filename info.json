@@ -1,0 +1,10 @@
+{
+    "name": "vector-constant-combinator",
+    "title": "Vector Constant Combinator",
+    "version": "1.0.0",
+    "author": "DemonicLaxatives",
+    "factorio_version": "1.1",
+    "dependencies": ["base"],
+    "description": "Adds a special constant combinator that can be configured with map pings.",
+    "homepage": ""
+}
